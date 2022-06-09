@@ -35,3 +35,16 @@ make test
 # run
 make run_dev
 ```
+
+### Objective
+
+```python
+# def ("({})") bool
+
+f("{}") == True
+f("{{)}") == False
+f("") == True
+```
+
+handles: [], {}, ()
+
