@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "interview-botify"
+version = "0.1.0"
+
+description = "interview-botify"
+authors = ["aurelienc <aurelien.somename@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "^0"
+
+[tool.poetry.dev-dependencies]
+bandit = "*"               # security practices                    https://github.com/PyCQA/bandit
+black = ">=22.3.0"         # automatic linter                      https://github.com/psf/black
+coverage = "*"             # unit and bdd tests code coverage
+flake8 = "*"               # utility tool                          https://gitlab.com/pycqa/flake8
+flake8-black = "*"         # ensure black has been ran
+flake8-builtins = "*"      # check for python builtins being used as variables or parameters.
+flake8-eradicate = "*"     # checks for dead code
+flake8-fixme = "*"         # fix-me and todos
+flake8-print = "*"         # print usage, logger should be used
+isort = "*"                # sort imports                          https://github.com/timothycrosley/isort
+mypy = "*"                 # static type checker                   https://github.com/python/mypy
+pylint = "*"               # code analysis                         https://www.pylint.org/
+pytest = "*"               # unit tests                            https://docs.pytest.org/en/latest/
+pytest-cov = "*"           # unit tests coverage
+safety = "*"               # check for package vulnerabilities     https://github.com/pyupio/safety
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
